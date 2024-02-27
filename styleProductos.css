@@ -1,0 +1,92 @@
+.productos{
+  width: 940px;
+  margin: 0 auto;
+}
+
+.productos li{
+  display: inline-block;
+  text-align: center;
+  width:30%;
+  vertical-align: top;
+  margin: 1.5%;
+  padding: 3.2% 2.2%;
+  box-sizing: border-box;
+  /*es muy importante analizar dentro del elemento lista (clase productos) establecimos un ancho total de 940px
+  despues dijimos que cada elemento de dicha lista, ocupe un 30% del total del ancho es decir 900 px, despues dijimos
+  que cada elemento tengo un margen de 1.5% del total esto, quiere decir que si cada elemento tiene dos margenes 
+  cada elemento tiene un 3% del espacio total utilizado en concepto de margen entonces entre el ancho y el margen 
+  los tres elementos ocupan el 99% del espacio es decir me estan sobrando 9.4 pixeles. Por ende cuando agrego la 
+  opción del padding (margen interno para alejar los graficos y letras del borde) una tarjeta se me cae de la linea.
+  para evitar eso utilizo la función box-sizing: border-box) esto hace que todas las configuraciones establecidads 
+  para estos elementos no se excedan del ancho total) */
+  border: 2px solid black;
+  border-radius: 10%;
+
+}
+
+.productos li:hover{ /*esto capta el movimiento del mousse*/
+  border-color: #c78c19;
+}
+
+.productos li:active{
+  border-color: #088c19;;
+}
+
+.productos li:hover h2{
+  /*cuando me posiciones en cualquier elemento del elemento li afecta el elemento h2 al cual le va a cbiar el tamaño*/
+  font-size: 33px;
+}
+
+.productos h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.descripcion{
+  font-size: 18px;
+}
+
+.precio{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:480px){
+
+  h1{
+    text-align: center;
+  }
+
+  .nav-responsive-button {
+    visibility: visible;
+  }
+  
+  .nav-inicial{
+    display:none;
+  }
+
+  .nav-responsive-li a{
+    font-size: 15px;
+  }
+
+  .caja {
+    width: auto;
+  }
+
+  .productos{
+    width: auto;
+    justify-items: center;
+    
+  }
+  
+  .productos li {
+    display: block;  
+    width: 90%; 
+    margin: 3% auto;
+   
+       
+  }
+
+}
+  

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Productos-Barberia-Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleProductos.css">
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="img/logo.png"></h1>
+        <nav class="nav-inicial">
+    	    <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+          	<li><a href="contacto.html">Contacto</a></li>
+        	</ul>
+        </nav>  
+        <nav clas="nav-responsive-container" > 
+          <button class="nav-responsive-button"><i class="fas fa-bars"></i></button>
+          <ul class="nav-responsive-ul" hidden>
+            <li class="nav-responsive-li"><a href="index.html">Home</a></li>
+            <li class="nav-responsive-li"><a href="productos.html">Productos</a></li>
+            <li class="nav-responsive-li"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <ul class="productos">
+        <a ><li>
+          <h2>Cabello</h2>
+          <img src="img/cabello.jpg">
+          <p class="descripcion">Con tijera o máquina a gusto del cliente.</p>
+          <p class="precio">Precio $5000</p>
+        </li></a>
+
+        <a><li>
+          <h2>Barba</h2>
+          <img src="img/barba.jpg">
+          <p class="descripcion">Corte y diseño profesional de barba.</p>
+          <p class="precio">Precio $4000</p>
+         </li></a>
+
+        <li>
+                    <h2>Cabello + Barba</h2>
+                    <a><img src="img/cabello+barba.jpg"></a>
+                    <p class="descripcion">Paquete completo de barba y cabello.</p>
+                    <p class="precio">Precio $8000</p>
+                </li>
+      </ul>
+    </main>
+    <footer>
+      <img src="img/logo-blanco.png">
+      <p class="copyright">&copy Copyright Barberia Alura 2024</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

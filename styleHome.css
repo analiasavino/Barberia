@@ -1,0 +1,45 @@
+.tituloPrincipal{
+    padding-left: 30px;
+}
+#banner{
+    width: 100;
+}
+.principal {
+    background: #CCCCCC;
+    border: 10px, solid #000000;
+    padding: 20px;
+    margin: 10%;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color:red;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+.diferenciales{
+    background-color: #ffffff;
+    padding: 30px;
+    
+}
+.imgDiferencial {
+    width: 50%;
+}
+
+ul{
+    display: inline-block; /*lo que estamos diciendole a html es que los items de la lista ocupen solo lo que necesiten
+    y que dejen libre el resto del espacio para poder poner la foto*/
+    vertical-align: top;
+    width: 30%;
+    margin-right: 15%;
+    
+}
+.items{
+    font-style: italic;
+}
